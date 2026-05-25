@@ -36,7 +36,10 @@ namespace Receiver {
                 s.set_int("window-width", this.default_width);
                 s.set_int("window-height", this.default_height);
 
-                if (s.get_boolean("run-in-background")) {
+                var pstate = this.app.player.state;
+                var is_playing = pstate == PlayerState.PLAYING || pstate == PlayerState.PAUSED;
+
+                if (is_playing && s.get_boolean("run-in-background")) {
                     this.hide();
                     return true;
                 }
