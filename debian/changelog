@@ -1,4 +1,4 @@
-receiver (0.5.0-1) unstable; urgency=medium
+receiver (0.6.0-1) unstable; urgency=medium
 
   * Replace home screen with dedicated Browse and Favourites tabs
   * Add mouse wheel scrolling for genre and country pill navigation
